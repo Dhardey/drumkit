@@ -1,0 +1,85 @@
+html {
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ p, .key {
+   font-family: 'Signika Negative', sans-serif;
+   font-size: 0.9rem;
+   color: #77d8bb;
+   text-align:center;
+ }
+ 
+ h1 {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 3.2rem;
+   color: #faf4ff;
+   line-height:0;
+   text-align:center;
+ }
+ 
+ html, body {
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   height: 100vh;
+ }
+ .container {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+ }
+ 
+ .keys {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-content: center;
+   align-content: center;
+ }
+ 
+ .key {
+   border: .2rem;
+   border-style: solid;
+   -moz-border-image: -moz-linear-gradient(top, #3badad 0%, #77d8bb 100%);
+   -webkit-border-image: -webkit-linear-gradient(top, #3badad 0%, #77d8bb 100%);
+   border-image: linear-gradient(to bottom, #3badad 0%, #77d8bb 100%);
+   border-image-slice: 1;
+   margin: 0.5rem;
+   font-size: 1.5rem;
+   padding: 2rem 0rem 1rem 1rem;
+   transition: all .07s ease;
+   width:7rem;
+   text-align: left;
+   background: transparent;
+ }
+ 
+ .playing {
+   transform: scale(1.1);
+   border-color: #FA9141;
+   box-shadow: 0 0 1rem #FA9141;
+   background: rgba(255,255,255,0.05);
+ }
+ 
+ .playing .sound {
+   color: #FA9141;
+ }
+ 
+ kbd {
+   display: block;
+   font-size: 3rem;
+   font-family: 'Chivo', sans-serif;
+   color: #faf4ff;
+   font-weight: 600;
+   line-height:0.7em;
+ }
+ 
+ .sound {
+   font-size: 1rem;
+ }
